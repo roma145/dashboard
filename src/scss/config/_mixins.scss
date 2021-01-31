@@ -84,7 +84,7 @@
     @include table;
 }
 
-@mixin circle {
+@mixin circle{
     position: absolute;
     content: '';
     width: 10px;
