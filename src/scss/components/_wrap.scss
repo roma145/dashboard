@@ -1,0 +1,41 @@
+body{
+    width: 1600px;
+    height: 1200px;
+    background: white;
+}
+body::after{
+    position: absolute;
+    content: '';
+    width: 1498.33px;
+    height: 806.02px;
+    left: 0px;
+    top: 0px;
+    background: url(../../src/img/background/Union.png) no-repeat ;
+    z-index: -1;
+}
+
+body::before{
+    position: absolute;
+    content: '';
+    width: 415px;
+    height: 415px;
+    left: 1251px;
+    top: 932px;
+    z-index: 5;
+    background: url(../../src/img/background/ellipse.png) no-repeat;
+}
+
+
+.wrap{
+    position: relative;
+    width: 1280px;
+    height: 880px;
+    margin: 160px auto ;
+
+    /* background frame */
+
+    background: #E5E5E5;
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+

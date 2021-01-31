@@ -1,0 +1,207 @@
+.nav{
+    position: absolute;
+    width: 98px;
+    height: 878px;
+    
+    top: 0px;
+    background: #FDFDFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 14px 0 0 14px;
+
+    .vk{
+        position: absolute;
+        width: 51px;
+        height: 35px;
+        left: 23px;
+        top: 46px;
+    }
+
+
+    
+    .nav__list{
+    display: flex;
+    width: 61px;
+    height: 430px;
+    left: 0px;
+    margin-top: 230px;
+    background: #FDFDFF;
+    flex-direction: column
+    }
+
+    .nav__icons{
+        width: auto;
+        height: 63px;
+        
+    }
+
+    
+
+    .nav__button1{
+        @include text();
+        top: 26.14%;
+        background: url(../../src/img/icons/home.png) no-repeat;
+    }
+
+    .nav__button1:before{
+        @include button;
+    }
+
+    .nav__button1:hover{
+        filter: invert(58%) sepia(15%) saturate(1592%) hue-rotate(201deg) brightness(88%) contrast(87%);
+    }
+
+    .nav__button2{
+        @include text();
+        top: 33.52%;
+        background: url(../../src/img/icons/news.png) no-repeat;
+    }
+
+    .nav__button2:before{
+        @include button;
+    }
+
+    .nav__button2:hover{
+        filter: invert(58%) sepia(15%) saturate(1592%) hue-rotate(201deg) brightness(88%) contrast(87%);
+    } 
+
+    .nav__button3{
+        @include text();
+        top: 40.91%;
+        background: url(../../src/img/icons/friends.png) no-repeat;
+    }
+
+    .nav__button3:before{
+        @include button;
+    }
+
+    .nav__button3:hover{
+        filter: invert(58%) sepia(15%) saturate(1592%) hue-rotate(201deg) brightness(88%) contrast(87%);
+    }
+
+    .nav__button4{
+        @include text();
+        top: 423px;
+        background: url(../../src/img/icons/mail.png) no-repeat;
+    }
+
+    .nav__button4:before{
+        @include button;
+    }
+
+    .nav__button4:hover{
+        filter: invert(58%) sepia(15%) saturate(1592%) hue-rotate(201deg) brightness(88%) contrast(87%);
+    }
+
+    .nav__button5{
+        @include text();
+        top: 480px;
+        background: url(../../src/img/icons/play.png) no-repeat;
+    }
+    
+    .nav__button5:before{
+        @include button;
+    }
+
+    .nav__button5:hover{
+        filter: invert(58%) sepia(15%) saturate(1592%) hue-rotate(201deg) brightness(88%) contrast(87%);
+    }
+
+    .nav__button6{
+        @include text();
+        top: 63.41%;
+        background: url(../../src/img/icons/stat.png) no-repeat;
+        
+    }
+
+    .nav__button6:before{
+        @include button;
+    }
+
+    .nav__button6:hover{
+        filter: invert(58%) sepia(15%) saturate(1592%) hue-rotate(201deg) brightness(88%) contrast(87%);
+    }
+
+
+    .nav__button7{
+        @include text();
+        top: 635px;
+        background: url(../../src/img/icons/settings.png) no-repeat;
+        
+    }
+
+    .nav__button7:before{
+        @include button;
+    }
+
+    .nav__button7:hover{
+        filter: invert(58%) sepia(15%) saturate(1592%) hue-rotate(201deg) brightness(88%) contrast(87%);
+    }
+
+
+
+    /* The switch - the box around the slider */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 30px;
+        top: 142px;
+        left: 18px;
+    }
+    
+    /* Hide default HTML checkbox */
+    .switch input {display:none;}
+    
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+        border: 0.5px solid #4F4F4F;    
+    }
+    
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 5px;
+        bottom: 5px;
+        background: url(.../../src/img/icons/moon.png) no-repeat center;
+        background-color: #7F7FD5;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    input:checked + .slider {
+        background-color: #7f7fd5;
+    }
+    
+    
+    
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px) rotate(360deg);
+        -ms-transform: translateX(26px) rotate(360deg);
+        transform: translateX(26px) rotate(360deg);
+        width: 12.01px;
+        height: 12.01px;
+        background: #7F7FD5;
+        border-radius: 50px;
+        border: 4px solid  #E9E9E9;
+    }
+    
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+    
+    .slider.round:before {
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,109 @@
+@mixin text{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 36px;
+    outline: none;
+}
+@mixin button{
+    position: absolute;
+    content: '';
+    left: -36px;
+    top: 0;
+    width: 4px;
+    height: 50px;
+    background: #FDFDFF;
+    border-radius: 0px 10px 10px 0 ;
+}
+
+@mixin gilroy-bold {
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+}
+@mixin title-card {
+    //styleName: h2;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4F4F4F;
+}
+@mixin  span-card {
+    //styleName: Text;
+    font-family: 'Gilroy';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4F4F4F;
+}
+
+
+@mixin numbers {
+    //styleName: Text;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: right;
+    
+    color: #979797;
+}
+@mixin table {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+   
+    color: #4F4F4F;
+}
+
+@mixin line {
+    position: absolute;
+    content:'';
+    width: 1px;
+    height: 5px;
+    margin-top: 33px;
+    margin-left: -1px;
+    background-color: #4F4F4F
+}
+@mixin date {
+    position: absolute;
+    content: '31/01';
+    margin-top: 40px;
+    margin-left: 0;
+    @include table;
+}
+
+@mixin circle {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: url(/src/img/section/pink-circle.png) no-repeat;
+}
+@mixin audience{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 25px;
+    @include table;
+    color: #979797;
+}
+
+@mixin country{
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #4F4F4F
+}

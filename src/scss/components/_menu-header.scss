@@ -1,0 +1,141 @@
+.menu{
+    position: absolute;
+    left: 98px;
+    width: 1180px;
+    height: 880px;
+    background: rgba(239, 243, 249, 1);
+    border-radius: 0 14px 14px 0;
+}
+.header{
+    width: 100%;
+    height: 137px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.header__title{
+    
+    width: 128px;
+    height: 50px;
+    margin-left: 48px;
+    align-self: center;
+
+
+    @include gilroy_bold;
+    display: flex;
+    align-items: center;
+
+    color: #4F4F4F;
+}
+
+.header__block {
+    width:auto;
+    height: 32px;
+    align-self: center;
+    display: flex;
+}
+
+
+.header__search {
+    
+    left: 357px;
+    width: 115px;
+    height: 32px;
+
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -4px;
+    
+    transform: translateY(-12px);
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 0 8px 8px 0;
+    border-left: none;
+}
+.header__button {
+    
+    height: 36px;
+    width: 38px;
+    flex-direction: row;
+    border-radius: 8px 0 0 8px;
+    margin-left: 45px;
+    border: 1px solid #EBEBEB;
+    background: #FDFDFF url(../../src/img/section/search.png) no-repeat center; 
+    border-right: none;
+}
+
+.header__notification{
+    width: 22px;
+    height: 22px;
+    margin-left: 24px;
+    align-self: center;
+    background: url(../../src/img/section/notification.png) no-repeat;
+    outline: none !important;
+
+}
+.header__notification::after{
+    position: absolute;
+    width: 6.75px;
+    height: 3px;
+    content: '';
+    border-radius: 0 0 15px 15px;
+    background: #979797;
+    
+    
+    margin-left: 6.5px;
+    margin-top: 18px;
+}
+.header__notification::before{
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #7F7FD5;
+    margin-left: 12px;
+    margin-top: -1px;
+
+}
+.header__notification:hover{
+    filter: invert(58%) sepia(15%) saturate(1592%) hue-rotate(201deg) brightness(88%) contrast(87%);
+}
+.header__name{
+    width: 52px;
+    height: 18px;
+    align-self: center;
+    margin-left: 575px;
+
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    
+    
+
+    color: #4F4F4F;
+
+}
+.header__anya{
+    width: 50px;
+    height: 50px;
+    margin-left: 8px;
+    align-self: center;
+}
+.header__button-anya{
+    width: 10px;
+    height: 10px;
+
+    margin-left: 9px;
+    align-self: center;
+    background: url(../../src/img/section/dropdown.png) no-repeat;
+    outline: none !important;
+
+}
